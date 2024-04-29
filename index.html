@@ -40,7 +40,7 @@
         }
         h1 {
     font-size: 2em; /* Tamaño de fuente aún más grande */
-    color: #fac0dd; /* Color rosa */
+    color: #f5e8ee; /* Color rosa */
     text-transform: uppercase; /* Convertir texto a mayúsculas */
     letter-spacing: 0.2em; /* Espaciado entre letras más amplio */
     text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5); /* Sombra de texto */
@@ -137,6 +137,7 @@
             <h3>Combo 1</h3>
             <p>2 COFLER AIR/ 2 ALFAJORES/ 2 OBLEAS / 2 BOMBONES</p>
             <p>Precio: $</p>
+            <button onclick="enviarPedido('Combo 1')">Encargar</button>
         </div>
     </div>
 
@@ -147,6 +148,7 @@
             <h3>Combo 2</h3>
             <p>3 COFLER AIR / 2 ALFAJORES / 2 OBLEAS / 2 BOMBONES</p>
             <p>Precio: $</p>
+            <button onclick="enviarPedido('Combo 1')">Encargar</button>
         </div>
     </div>
 
@@ -157,6 +159,7 @@
             <h3>Combo 3</h3>
             <p>3 COFLER AIR / 2 BLOCK CHICOS / 2 ALFAJORES / 2 OBLEAS / 2 BOMBONES</p>
             <p>Precio: $</p>
+            <button onclick="enviarPedido('Combo 1')">Encargar</button>
         </div>
     </div>
 
@@ -164,6 +167,9 @@
     <!-- Puedes usar imágenes como ramito4.jpg, ramito5.jpg, etc. -->
 
 </section>
+
+
+
 <footer>
     <p>&copy; 2024 Sweet Ramitos </p>
     <div class="contact">
@@ -175,6 +181,15 @@
         </a>
     </div>
 </footer>
-
+<script>
+    function enviarPedido(producto) {
+        // Aquí puedes construir el mensaje con la información del pedido
+        var mensaje = "¡Hola! Me gustaría encargar el producto: " + producto;
+        // Reemplaza el número de teléfono con el número al que quieras enviar el mensaje
+        var telefono = "+543755219626";
+        // Abre una ventana nueva para enviar el mensaje por WhatsApp
+        window.open("https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje));
+    }
+</script>
 </body>
 </html>
