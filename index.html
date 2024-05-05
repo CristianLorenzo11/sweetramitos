@@ -12,7 +12,26 @@
             background-color: rgb(141, 8, 101);; /* Cambio del fondo a un tono más claro */
             color: #333; /* Cambio del color del texto a un tono más oscuro para mayor contraste */
         }
+        
+        .encargar {
+  background-color: #ff69b4; /* Cambia el color de fondo a rosado */
+  color: white; /* Cambia el color del texto a blanco */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  animation: parpadeo 1s infinite; /* Aplica la animación de parpadeo */
+}
 
+/* Animación de parpadeo */
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
         header {
             background: url('header.jpeg') center/contain no-repeat;
             background-size: 150%;
@@ -127,42 +146,84 @@
     <p></p>
 </header>
 
-<section>
-    <h2>Nuestros Productos</h2>
+<section >
+    <h2>Nuestros Combos</h2>
 
     <!-- Producto 1 -->
     <div class="product">
-        <img src="combo1.jpeg" alt="combo 1">
+        <img src="COMBO 1.jpg" alt="combo 1">
         <div>
             <h3>Combo 1</h3>
-            <p>2 Cofler Air/ 2 Alfajores/ 2 Obleas / 2 Bombones</p>
+            <p>2 Cofler Air </p>
+            <p>2 Blocks Chicos </p>
+            <p>2 Alfajores</p>
+            <p>2 Obleas</p>
+            <p>2 Bombones</p>
             <p>Precio: $</p>
-            <button onclick="enviarPedido('Combo 1 que contiene : 2 Cofler Air/ 2 Alfajores/ 2 Obleas / 2 Bombones.')">Encargar</button>
+            <button class="encargar" onclick="enviarPedido('Combo 1 que contiene : 2 Cofler Air/ 2 Alfajores/ 2 Obleas / 2 Bombones.')">Comprar Ahora</button>
         </div>
     </div>
 
     <!-- Producto 2 -->
     <div class="product">
-        <img src="combo2.jpeg" alt="combo2">
+        <img src="COMBO 2.jpg" alt="combo2">
         <div>
             <h3>Combo 2</h3>
-            <p>3 Cofler Air / 2 Alfajores / 2 Obleas / 2 Bombones</p>
+            <p>3 Cofler Air </p>
+            <p>2 Alfajores</p>
+            <p>2 Obleas</p>
+            <p>2 Bombones</p>
             <p>Precio: $</p>
-            <button onclick="enviarPedido('Combo 2 que contiene:  3 Cofler Air / 2 Alfajores / 2 Obleas / 2 Bombones')">Encargar</button>
+            <button class="encargar" onclick="enviarPedido('Combo 2 que contiene:  3 Cofler Air , 2 Alfajores , 2 Obleas , 2 Bombones')">Comprar Ahora</button>
         </div>
     </div>
 
     <!-- Producto 3 -->
     <div class="product">
-        <img src="combo3.jpeg" alt="combo3">
+        <img src="COMBO 3 .JPG" alt="combo3">
         <div>
             <h3>Combo 3</h3>
-            <p>3 Cofler Air / 2 BLOCK CHICOS / 2 Alfajores / 2 Obleas / 2 Bombones</p>
+            <p>3 Cofler Air </p>
+            <p>2 Blocks Chicos </p>
+            <p>2 Alfajores</p>
+            <p>2 Obleas</p>
+            <p>2 Bombones</p>
             <p>Precio: $</p>
-            <button onclick="enviarPedido('Combo 3 que contiene: 3 Cofler Air / 2 BLOCK CHICOS / 2 Alfajores / 2 Obleas / 2 Bombones')">Encargar</button>
+            <button class="encargar" onclick="enviarPedido('Combo 3 que contiene: 3 Cofler Air , 2 BLOCK CHICOS , 2 Alfajores , 2 Obleas , 2 Bombones')">Comprar Ahora</button>
         </div>
     </div>
 
+    
+    <!-- Producto 4 -->
+    <div class="product">
+        <img src="COMBO 4.jpg" alt="combo4">
+        <div>
+            <h3>Combo 3</h3>
+            <p>3 Cofler Air </p>
+            <p>4 Blocks Chicos </p>
+            <p>2 Alfajores</p>
+            <p>2 Obleas</p>
+            <p>2 Bombones</p>
+            <p>Precio: $</p>
+            <button class="encargar" onclick="enviarPedido('Combo 3 que contiene: 3 Cofler Air , 4 Blocks Chicos , 2 Alfajores , 2 Obleas , 2 Bombones')">Comprar Ahora</button>
+        </div>
+    </div>
+
+        <!-- Producto 5 -->
+        <div class="product">
+            <img src="COMBO 5.jpg" alt="combo5">
+            <div>
+                <h3>Combo 3</h3>
+                <p>4 Cofler Air </p>
+                <p>2 Blocks Chicos </p>
+                <p>2 Alfajores</p>
+                <p>2 Obleas</p>
+                <p>2 Bombones</p>
+                <p>1 cerveza</p>
+                <p>Precio: $</p>
+                <button class="encargar" onclick="enviarPedido('Combo 3 que contiene: 4 Cofler Air , 2 Blocks Chicos , 2 Alfajores , 2 Obleas , 2 Bombones')">Comprar Ahora</button>
+            </div>
+        </div>
     <!-- Repite este bloque para cada producto (hasta el Producto 10) -->
     <!-- Puedes usar imágenes como ramito4.jpg, ramito5.jpg, etc. -->
 
